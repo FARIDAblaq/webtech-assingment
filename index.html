@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>form</title>
+		<link href="cv.css" rel="stylesheet" type="text/css">
+		
+	</head>
+	<body>
+		<h1 id="ref">  CV PROFILE INFO</h1>
+		
+		<form id="form" class="form-box" action="C:\Users\HP\Desktop\CV-assignment\cv.html" onsubmit ="return(validate())" method="post">
+			<div class="field-group">
+		    		<label for="first">First name</label>
+		    		<input type="text" id="first" name="f_name"  placeholder="First Name">
+        		</div>
+        	<div class="field-group">
+		        	<label for="middle">Middle name</label>
+		        	<input type="text" id="middle" name="m_name"  placeholder="Middle Name">
+        	</div>
+
+	        	<div class="field-group">
+		        	<label for="last">Last name</label>
+		        	<input type="text" id="last" name="l_name" placeholder="Last Name">
+        	</div>
+	    	<div class="field-group">
+		    	<label for ="email">Email</label>
+				<input type="email" id="email" name="email"  placeholder="studentname@ahesi.edu.gh">
+        	</div>
+        	<div class="field-group">
+		    	<label for ="address">Address</label>
+				<input type="text" id="address" name="address"  placeholder="City, Country">
+        	</div>
+        	<div class="field-group">
+		    	<label for ="phone">Phone number</label>
+				<input type="tel" id="phone" name="phone"  placeholder="+233.........">
+        	</div>
+        	<div class="field-group">
+		    	<label for ="nationality">Nationality</label>
+				<input type="text" id="nationality" name="nationality"  placeholder="Ghanaian,Nigerian...">
+        	</div>
+        	<div class="field-group">
+		    	<label for ="linkedin">LinkedIn url</label>
+				<input type="url" id="lurl" name="linkedin"  placeholder="http://.............">
+        	</div>
+	    	<div class="dropdown">
+            	<label for="Gender">Gender</label>
+            	<select id="gender" name = "gender">
+                	<option value="male">Male</option>
+                	<option value="Female">Female</option>
+            	</select>
+			
+    		</div>
+			<button type="submit" class="sb" value="submit" onclick="sendtoform()" >Submit</button>
+			<div class="error-msg" id="form-errors">
+    		</div>
+		</form>
+		<script src="cv.js"></script>
+	</body>
+	
+	
+</html>
